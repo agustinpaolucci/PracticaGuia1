@@ -16,7 +16,7 @@ namespace PracticaGuia1
         private string dni; // Campo de cada objeto Persona que almacena su NIF
 
 
-        // PROPERTIES
+        // PROPIEDADES
         public string Nombre
         {
             get { return nombre; }
@@ -43,15 +43,17 @@ namespace PracticaGuia1
             edad = 0;
             dni = string.Empty;
         }
-
+        
+        // SOBRECARGA DE METODOS
         // CONSTRUCTOR CON 2 PARAMETROS
+
         public Persona(string nombre, string dni)
         {
             this.nombre = nombre;
             this.dni = dni;
         }
 
-        // CONSTRUCTOR CON 2 PARAMETROS
+        // CONSTRUCTOR CON OTROS 2 PARAMETROS
         public Persona(string nombre, int edad)
         {
             this.nombre = nombre;
@@ -68,27 +70,27 @@ namespace PracticaGuia1
 
         
 
-
+        // METODO 
         public void Cumpleanos()
         {
             edad++;
         }
 
-
-
-
-
-
-
-
-        // METODO TOSTRING
+        // METODO TOSTRING SOBREESCRITO
         public override string ToString()
         {
             return "\nNOMBRE: " + nombre + "\nEDAD: " + edad + "\nDNI: " + dni;
         }
-
-
-
-
     }
 }
+
+
+/*
+CREACION DE UN METODO
+<tipoDevuelto> <nombreMétodo> (<parametros>) 
+{
+    <instrucciones>
+}
+
+*/
+
